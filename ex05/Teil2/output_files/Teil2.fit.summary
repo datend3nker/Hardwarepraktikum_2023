@@ -1,0 +1,16 @@
+Fitter Status : Successful - Thu May 25 20:19:03 2023
+Quartus Prime Version : 21.1.1 Build 850 06/23/2022 SJ Lite Edition
+Revision Name : Teil2
+Top-level Entity Name : soundGenerator
+Family : Cyclone IV E
+Device : EP4CE22F17C6
+Timing Models : Final
+Total logic elements : 44 / 22,320 ( < 1 % )
+    Total combinational functions : 43 / 22,320 ( < 1 % )
+    Dedicated logic registers : 28 / 22,320 ( < 1 % )
+Total registers : 28
+Total pins : 14 / 154 ( 9 % )
+Total virtual pins : 0
+Total memory bits : 0 / 608,256 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 132 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )

@@ -1,0 +1,44 @@
+|soundGenerator
+clk_50 => clk.CLK
+clk_50 => flip.CLK
+clk_50 => counter[0].CLK
+clk_50 => counter[1].CLK
+clk_50 => counter[2].CLK
+clk_50 => counter[3].CLK
+clk_50 => counter[4].CLK
+clk_50 => counter[5].CLK
+clk_50 => counter[6].CLK
+clk_50 => counter[7].CLK
+clk_50 => counter[8].CLK
+clk_50 => counter[9].CLK
+clk_50 => counter[10].CLK
+clk_50 => counter[11].CLK
+clk_50 => counter[12].CLK
+clk_50 => counter[13].CLK
+clk_50 => counter[14].CLK
+clk_50 => counter[15].CLK
+clk_50 => counter[16].CLK
+clk_50 => counter[17].CLK
+clk_50 => counter[18].CLK
+clk_50 => counter[19].CLK
+clk_50 => counter[20].CLK
+clk_50 => counter[21].CLK
+clk_50 => counter[22].CLK
+clk_50 => counter[23].CLK
+clk_50 => counter[24].CLK
+clk_50 => counter[25].CLK
+sound <= clk.DB_MAX_OUTPUT_PORT_TYPE
+anal_input[0] => ~NO_FANOUT~
+anal_input[1] => ~NO_FANOUT~
+anal_input[2] => ~NO_FANOUT~
+anal_input[3] => ~NO_FANOUT~
+anal_input[4] => ~NO_FANOUT~
+anal_input[5] => ~NO_FANOUT~
+anal_input[6] => ~NO_FANOUT~
+anal_input[7] => ~NO_FANOUT~
+anal_input[8] => ~NO_FANOUT~
+anal_input[9] => ~NO_FANOUT~
+anal_input[10] => ~NO_FANOUT~
+anal_input[11] => ~NO_FANOUT~
+
+
