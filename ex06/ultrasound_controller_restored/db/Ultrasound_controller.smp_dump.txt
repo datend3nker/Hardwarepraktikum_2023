@@ -1,0 +1,8 @@
+
+State Machine - |ultrasound_controller|current_state
+Name current_state.timeout current_state.measure_distance current_state.wait_for_response current_state.trigger_pulse current_state.initial_state 
+current_state.initial_state 0 0 0 0 0 
+current_state.trigger_pulse 0 0 0 1 1 
+current_state.wait_for_response 0 0 1 0 1 
+current_state.measure_distance 0 1 0 0 1 
+current_state.timeout 1 0 0 0 1 
