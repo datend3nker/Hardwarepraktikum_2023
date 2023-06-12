@@ -1,0 +1,129 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity ultrasound_controller is port(
+	clk_50: in std_logic;
+	
+	-- enable signal
+	enable : in std_logic;
+	
+	-- trigger, connected to ultrasound sensor
+	trigger: inout std_logic := 'Z';
+
+	-- finished signal - high if system is idle
+	finished : out std_logic;
+		
+	-- distance in cm (maximum = 255)
+	distance : out std_logic_vector(7 downto 0) := (others => '0')
+);
+end ultrasound_controller;
+
+
+
+architecture behavior of ultrasound_controller is
+	-- state of the counter
+	type state is (ctrl_init, ctrl_send_start, ctrl_send_high, ctrl_send_fin, ctrl_wait, ctrl_count, ctrl_fin);
+	signal ctrl_state: state := ctrl_init;
+	signal counter: std_logic_vector(20 downto 0);
+	signal counter_high: std_logic_vector(20 downto 0);
+	signal t: std_logic_vector(7 downto 0) := (others => '0');
+	signal last_enable: std_logic := '0';
+begin
+	process(clk_50)
+	begin
+		if rising_edge(clk_50)
+		then
+			case ctrl_state is
+				when ctrl_init => -- wait on enable
+					if enable = '1' and last_enable = '0'
+					then
+						ctrl_state <= ctrl_send_start;
+						trigger <= '0';
+						counter <= (others => '0');
+					else
+						last_enable <= enable;
+					end if;
+				
+				when ctrl_send_start => -- create low signal
+					if(unsigned(counter) > 500)
+					then
+						counter <= (others => '0');
+						trigger <= '1';
+						ctrl_state <= ctrl_send_high;
+					else
+						counter <= std_logic_vector(unsigned(counter)+1);
+					end if;
+					
+				when ctrl_send_high	=> -- create high signal
+					if(unsigned(counter) > 500)
+					then
+						counter <= (others => '0');
+						trigger <= '0';
+						ctrl_state <= ctrl_send_fin;
+					else
+						counter <= std_logic_vector(unsigned(counter)+1);
+					end if;
+					
+				
+				when ctrl_send_fin => -- create low signal
+					if(unsigned(counter) > 500)
+					then
+						trigger <= 'Z';
+						ctrl_state <= ctrl_wait;
+						counter <= (others => '0');
+					else					
+						counter <= std_logic_vector(unsigned(counter)+1);
+					end if;
+					
+				when ctrl_wait => -- wait for 1
+					if trigger = '1'
+					then -- start counting
+						ctrl_state <= ctrl_count;
+						t <= (others => '0');
+						counter_high <= (others => '0');
+					else
+						if(unsigned(counter) > 1500000) -- abort
+						then
+							ctrl_state <= ctrl_init;
+							last_enable <= enable;
+						else
+							counter <= std_logic_vector(unsigned(counter)+1);
+						end if;
+					end if;
+					
+				when ctrl_count => -- count til trigger is 0 or reached 30 ms
+					if(trigger = '1')
+					then
+						if(unsigned(counter) > 1500000) -- abort cause timout
+						then
+							ctrl_state <= ctrl_init;
+							last_enable <= enable;
+						else
+							counter <= std_logic_vector(unsigned(counter)+1);
+						end if;
+						
+						if unsigned(counter_high) > 50*58
+						then
+							counter_high <= (others => '0');
+							t <= std_logic_vector(unsigned(t)+1);
+						else
+							counter_high <= std_logic_vector(unsigned(counter_high)+1);
+						end if;
+					else -- 0 reached
+						ctrl_state <= ctrl_fin;
+						distance <= t;
+					end if;
+					
+				when ctrl_fin =>
+					if trigger = 'Z'
+					then					
+						ctrl_state <= ctrl_init;
+						last_enable <= enable;
+					end if;
+			end case;
+		end if;
+	end process;
+	
+	finished <= '1' when ctrl_state = ctrl_init else '0';	
+end behavior;

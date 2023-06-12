@@ -8,27 +8,27 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dC:/Users/datoo/Documents/GitHub/Hardwarepraktikum_2023/ex06/ultrasound_controller_restored/simulation/modelsim
+Z0 d/home/lettner/OneDrive/Studium/Studium_Module/Hardwarepraktikum_2023/ex06/ultrasound_controller_restored/simulation/modelsim
 Eultrasound_controller
-Z1 w1434372455
+Z1 w1686607703
 Z2 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
 Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z4 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
 !i122 0
 R0
-Z5 8C:/Users/datoo/Documents/GitHub/Hardwarepraktikum_2023/ex06/ultrasound_controller_restored/vhdl/ultrasound_controller.vhd
-Z6 FC:/Users/datoo/Documents/GitHub/Hardwarepraktikum_2023/ex06/ultrasound_controller_restored/vhdl/ultrasound_controller.vhd
+Z5 8/home/lettner/OneDrive/Studium/Studium_Module/Hardwarepraktikum_2023/ex06/ultrasound_controller_restored/vhdl/ultrasound_controller.vhd
+Z6 F/home/lettner/OneDrive/Studium/Studium_Module/Hardwarepraktikum_2023/ex06/ultrasound_controller_restored/vhdl/ultrasound_controller.vhd
 l0
 L5 1
-VBe0Q5TN@A;h0Jk5HKSm=82
-!s100 8@COKdb`GLcDCbdD2nO;63
+VjP4MUl=NRPez2NlnYXE<P0
+!s100 QllD:a;?ZNO4[XUL^ncZU1
 Z7 OV;C;2020.1;71
 31
-Z8 !s110 1686245237
+Z8 !s110 1686607764
 !i10b 1
-Z9 !s108 1686245237.000000
-Z10 !s90 -reportprogress|300|-93|-work|work|C:/Users/datoo/Documents/GitHub/Hardwarepraktikum_2023/ex06/ultrasound_controller_restored/vhdl/ultrasound_controller.vhd|
-Z11 !s107 C:/Users/datoo/Documents/GitHub/Hardwarepraktikum_2023/ex06/ultrasound_controller_restored/vhdl/ultrasound_controller.vhd|
+Z9 !s108 1686607764.000000
+Z10 !s90 -reportprogress|300|-93|-work|work|/home/lettner/OneDrive/Studium/Studium_Module/Hardwarepraktikum_2023/ex06/ultrasound_controller_restored/vhdl/ultrasound_controller.vhd|
+Z11 !s107 /home/lettner/OneDrive/Studium/Studium_Module/Hardwarepraktikum_2023/ex06/ultrasound_controller_restored/vhdl/ultrasound_controller.vhd|
 !i113 1
 Z12 o-93 -work work
 Z13 tExplicit 1 CvgOpt 0
@@ -36,12 +36,12 @@ Abehavior
 R2
 R3
 R4
-DEx4 work 21 ultrasound_controller 0 22 Be0Q5TN@A;h0Jk5HKSm=82
+DEx4 work 21 ultrasound_controller 0 22 jP4MUl=NRPez2NlnYXE<P0
 !i122 0
-l26
-L15 76
-V`dHONA181Do1=j<L:M5lA2
-!s100 NSV[<F8d_@HU86lbIV]9o0
+l33
+L15 110
+V@GZ8]CZ2N?U93URl_FR=i3
+!s100 1N^Mam7n9E17HlZ5OhY=L3
 R7
 31
 R8
@@ -58,8 +58,8 @@ R3
 R4
 !i122 1
 R0
-Z15 8C:/Users/datoo/Documents/GitHub/Hardwarepraktikum_2023/ex06/ultrasound_controller_restored/simulation/modelsim/ultrasound_controller.vht
-Z16 FC:/Users/datoo/Documents/GitHub/Hardwarepraktikum_2023/ex06/ultrasound_controller_restored/simulation/modelsim/ultrasound_controller.vht
+Z15 8/home/lettner/OneDrive/Studium/Studium_Module/Hardwarepraktikum_2023/ex06/ultrasound_controller_restored/simulation/modelsim/ultrasound_controller.vht
+Z16 F/home/lettner/OneDrive/Studium/Studium_Module/Hardwarepraktikum_2023/ex06/ultrasound_controller_restored/simulation/modelsim/ultrasound_controller.vht
 l0
 L31 1
 Vl95kz7:?kH7o:9:i0Fc351
@@ -69,8 +69,8 @@ R7
 R8
 !i10b 1
 R9
-Z17 !s90 -reportprogress|300|-93|-work|work|C:/Users/datoo/Documents/GitHub/Hardwarepraktikum_2023/ex06/ultrasound_controller_restored/simulation/modelsim/ultrasound_controller.vht|
-!s107 C:/Users/datoo/Documents/GitHub/Hardwarepraktikum_2023/ex06/ultrasound_controller_restored/simulation/modelsim/ultrasound_controller.vht|
+Z17 !s90 -reportprogress|300|-93|-work|work|/home/lettner/OneDrive/Studium/Studium_Module/Hardwarepraktikum_2023/ex06/ultrasound_controller_restored/simulation/modelsim/ultrasound_controller.vht|
+!s107 /home/lettner/OneDrive/Studium/Studium_Module/Hardwarepraktikum_2023/ex06/ultrasound_controller_restored/simulation/modelsim/ultrasound_controller.vht|
 !i113 1
 R12
 R13
@@ -89,7 +89,7 @@ R8
 !i10b 1
 R9
 R17
-Z18 !s107 C:/Users/datoo/Documents/GitHub/Hardwarepraktikum_2023/ex06/ultrasound_controller_restored/simulation/modelsim/ultrasound_controller.vht|
+Z18 !s107 /home/lettner/OneDrive/Studium/Studium_Module/Hardwarepraktikum_2023/ex06/ultrasound_controller_restored/simulation/modelsim/ultrasound_controller.vht|
 !i113 1
 R12
 R13

@@ -4,87 +4,121 @@ use ieee.numeric_std.all;
 
 entity ultrasound_controller is
     port (
-        clk_50    : in  std_logic;
-        enable    : in  std_logic;
-        trigger   : inout std_logic;
+        clk_50    : in std_logic;
+        enable    : in std_logic;
+        trigger   : inout std_logic := 'Z';
         finished  : out std_logic;
-        distance  : out std_logic_vector(7 downto 0)
+        distance  : out std_logic_vector(7 downto 0) := (others => '0')
     );
 end ultrasound_controller;
 
 architecture behavior of ultrasound_controller is
-    -- FSM states
-    type state_type is (initial_state, trigger_pulse, wait_for_response, measure_distance, timeout);
-    signal current_state : state_type;
+    -- State of the counter
+    type state is (
+        STATE_INIT,
+        STATE_SEND_START,
+        STATE_SEND_HIGH,
+        STATE_SEND_FIN,
+        STATE_WAIT,
+        STATE_COUNT,
+        STATE_FIN
+    );
     
-    -- Internal signals and constants
-    signal trigger_counter : integer range 0 to 99_999;  -- 50 MHz clock, 10 µs per count
-    signal response_counter : integer range 0 to 99_999; -- 50 MHz clock, 10 µs per count
-    signal timeout_counter : integer range 0 to 1_499_999; -- 50 MHz clock, 30 ms timeout
-    signal measured_distance : integer range 0 to 255;   -- Distance in cm (maximum = 255)
+    signal ctrl_state        : state := STATE_INIT;
+    signal counter          : std_logic_vector(20 downto 0);
+    signal counter_high     : std_logic_vector(20 downto 0);
+    signal distance_counter : std_logic_vector(7 downto 0) := (others => '0');
+    signal last_enable      : std_logic := '0';
     
 begin
-
-    process (clk_50)
+    process(clk_50)
     begin
         if rising_edge(clk_50) then
-            if enable = '1' then
-                case current_state is
-                    when initial_state =>
-                        -- Initial state: Wait for enable signal
-                        if enable = '1' then
-                            current_state <= trigger_pulse;
-                            trigger_counter <= 0;
-                            response_counter <= 0;
-                            timeout_counter <= 0;
-                            distance <= "00000000";
-                            finished <= '0';
-                            trigger <= '0'; -- Set trigger to LOW
-                        end if;
-
-                    when trigger_pulse =>
-                        -- Generate trigger pulse
-                        if trigger_counter < 10 then
-                            trigger_counter <= trigger_counter + 1;
-                            trigger <= '0'; -- Set trigger to LOW
-                        elsif trigger_counter = 10 then
-                            trigger_counter <= trigger_counter + 1;
-                            trigger <= '1'; -- Set trigger to HIGH
+            case ctrl_state is
+                when STATE_INIT =>
+                    -- Wait on enable
+                    if enable = '1' and last_enable = '0' then
+                        ctrl_state <= STATE_SEND_START;
+                        trigger    <= '0';
+                        counter    <= (others => '0');
+                    else
+                        last_enable <= enable;
+                    end if;
+                
+                when STATE_SEND_START =>
+                    -- Create low signal
+                    if(unsigned(counter) > 500) then
+                        counter    <= (others => '0');
+                        trigger    <= '1';
+                        ctrl_state <= STATE_SEND_HIGH;
+                    else
+                        counter    <= std_logic_vector(unsigned(counter) + 1);
+                    end if;
+                    
+                when STATE_SEND_HIGH =>
+                    -- Create high signal
+                    if(unsigned(counter) > 500) then
+                        counter    <= (others => '0');
+                        trigger    <= '0';
+                        ctrl_state <= STATE_SEND_FIN;
+                    else
+                        counter    <= std_logic_vector(unsigned(counter) + 1);
+                    end if;
+                    
+                when STATE_SEND_FIN =>
+                    -- Create low signal
+                    if(unsigned(counter) > 500) then
+                        trigger    <= 'Z';
+                        ctrl_state <= STATE_WAIT;
+                        counter    <= (others => '0');
+                    else                    
+                        counter    <= std_logic_vector(unsigned(counter) + 1);
+                    end if;
+                    
+                when STATE_WAIT =>
+                    -- Wait for 1
+                    if trigger = '1' then
+                        ctrl_state <= STATE_COUNT;
+                        distance_counter <= (others => '0');
+                        counter_high <= (others => '0');
+                    else
+                        if(unsigned(counter) > 1500000) then -- Abort
+                            ctrl_state   <= STATE_INIT;
+                            last_enable <= enable;
                         else
-                            current_state <= wait_for_response;
+                            counter      <= std_logic_vector(unsigned(counter) + 1);
                         end if;
-
-                    when wait_for_response =>
-                        -- Wait for sensor response
-                        if trigger = 'Z' then  -- Check if the sensor controls the trigger signal
-                            response_counter <= response_counter + 1;
-                            if response_counter = 5_000 then
-                                current_state <= measure_distance;
-                            end if;
+                    end if;
+                    
+                when STATE_COUNT =>
+                    -- Count until trigger is 0 or reached 30 ms
+                    if(trigger = '1') then
+                        if(unsigned(counter) > 1500000) then -- Abort due to timeout
+                            ctrl_state   <= STATE_INIT;
+                            last_enable <= enable;
                         else
-                            current_state <= timeout;
+                            counter      <= std_logic_vector(unsigned(counter) + 1);
                         end if;
-
-                    when measure_distance =>
-                        -- Measure distance
-                        measured_distance <= response_counter / 58;
-                        distance <= std_logic_vector(to_unsigned(measured_distance, 8));
-                        current_state <= initial_state;
-
-                    when timeout =>
-                        -- Timeout
-                        timeout_counter <= timeout_counter + 1;
-                        if timeout_counter = 1_499_999 then
-                            current_state <= initial_state;
-                            finished <= '1';
+                        
+                        if unsigned(counter_high) > 50*58 then
+                            counter_high <= (others => '0');
+                            distance_counter <= std_logic_vector(unsigned(distance_counter) + 1);
+                        else
+                            counter_high <= std_logic_vector(unsigned(counter_high) + 1);
                         end if;
-                end case;
-            else
-                -- Reset FSM when enable signal is '0'
-                current_state <= initial_state;
-                finished <= '1';
-            end if;
+                    else -- 0 reached
+                        ctrl_state <= STATE_FIN;
+                        distance   <= distance_counter;
+                    end if;
+                    
+                when STATE_FIN =>
+                    if trigger = 'Z' then
+                        ctrl_state   <= STATE_INIT;
+                        last_enable <= enable;
+                    end if;
+            end case;
         end if;
     end process;
     
+    finished <= '1' when ctrl_state = STATE_INIT else '0';    
 end behavior;
