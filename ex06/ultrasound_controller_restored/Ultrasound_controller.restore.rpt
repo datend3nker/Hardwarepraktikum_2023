@@ -1,5 +1,5 @@
 Restore Archived Project report for Ultrasound_controller
-Tue Jun 13 10:14:21 2023
+Tue Jun 13 10:39:40 2023
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -37,9 +37,9 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------+
 ; Restore Archived Project Summary                                        ;
 +---------------------------------+---------------------------------------+
-; Restore Archived Project Status ; Successful - Tue Jun 13 10:14:21 2023 ;
+; Restore Archived Project Status ; Successful - Tue Jun 13 10:39:40 2023 ;
 ; Revision Name                   ; Ultrasound_controller                 ;
-; Top-level Entity Name           ; ultrasound_reader                     ;
+; Top-level Entity Name           ; ultrasound_controller                 ;
 ; Family                          ; Cyclone IV E                          ;
 +---------------------------------+---------------------------------------+
 
@@ -50,15 +50,22 @@ https://fpgasoftware.intel.com/eula.
 Info: Successfully restored 'C:/Users/lettner/Documents/GitHub/Hardwarepraktikum_2023/ex06/ultrasound_controller.qar' into the 'C:/Users/lettner/Documents/GitHub/Hardwarepraktikum_2023/ex06/ultrasound_controller_restored/' directory
 Info: Generated report 'Ultrasound_controller.restore.rpt'
 Info (23030): Evaluation of Tcl script c:/intelfpga_lite/20.1/quartus/common/tcl/apps/qpm/qar.tcl was successful
-Info: Quartus Prime Shell was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 4820 megabytes
-    Info: Processing ended: Tue Jun 13 10:14:21 2023
+Info: Quartus Prime Shell was successful. 0 errors, 13 warnings
+    Info: Peak virtual memory: 4819 megabytes
+    Info: Processing ended: Tue Jun 13 10:39:40 2023
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:00
 
 
++----------------+
+; Files Restored ;
++----------------+
+; File Name      ;
++----------------+
+
+
 +-----------------------------------------------+
-; Files Restored                                ;
+; Files Not Restored                            ;
 +-----------------------------------------------+
 ; File Name                                     ;
 +-----------------------------------------------+
@@ -75,12 +82,5 @@ Info: Quartus Prime Shell was successful. 0 errors, 0 warnings
 ; vhdl/lcd_driver2.vhd                          ;
 ; vhdl/ultrasound_controller.vhd                ;
 +-----------------------------------------------+
-
-
-+--------------------+
-; Files Not Restored ;
-+--------------------+
-; File Name          ;
-+--------------------+
 
 
