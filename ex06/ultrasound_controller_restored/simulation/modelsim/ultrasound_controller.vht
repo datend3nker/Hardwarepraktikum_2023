@@ -1,4 +1,4 @@
--- Copyright (C) 2022  Intel Corporation. All rights reserved.
+-- Copyright (C) 2020  Intel Corporation. All rights reserved.
 -- Your use of Intel Corporation's design tools, logic functions 
 -- and other software and tools, and any partner logic 
 -- functions, and any output files from any of the foregoing 
@@ -18,11 +18,11 @@
 -- suit user's needs .Comments are provided in each section to help the user  
 -- fill out necessary details.                                                
 -- ***************************************************************************
--- Generated on "06/08/2023 18:54:31"
+-- Generated on "06/13/2023 10:16:57"
                                                             
 -- Vhdl Test Bench template for design  :  ultrasound_controller
 -- 
--- Simulation tool : ModelSim (VHDL)
+-- Simulation tool : ModelSim-Altera (VHDL)
 -- 
 
 LIBRARY ieee;                                               
@@ -57,7 +57,7 @@ BEGIN
 	finished => finished,
 	trigger => trigger
 	);
-init : -- Clock generation process
+init : -- Clock-Generationsprozess
 process
 begin
     clk_50 <= '1';
@@ -66,29 +66,30 @@ begin
     wait for 10 ns;
 end process;
 
--- Simulation process
+-- Simulationsprozess
 process
 begin
     enable <= '0';
     trigger <= 'Z';
     wait for 1 ms;
     
-    -- Start the measurement
+    -- Starte die Messung
     enable <= '1';
     
-    -- Wait for the trigger signal to be over
+    -- Warte auf das Ende des Trigger-Signals
     while trigger /= '1' loop
         wait for 1 us;
     end loop;
     
+    -- Warte, bis das Trigger-Signal beendet ist
     while trigger = '1' loop
         wait for 1 us;
     end loop;
     
-    -- Stop measuring after the first sample
+    -- Beende die Messung nach der ersten Probe
     enable <= '0';
     
-    -- Send response after a short delay
+    -- Sende jetzt die Antwort nach einer kurzen Verzögerung
     wait for 10 us;
     trigger <= '1';
     wait for 5 ms;

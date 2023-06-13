@@ -1,6 +1,6 @@
 EDA Netlist Writer report for Ultrasound_controller
-Tue Jun 13 00:36:03 2023
-Quartus Prime Version 21.1.1 Build 850 06/23/2022 SJ Lite Edition
+Tue Jun 13 10:32:24 2023
+Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
 ---------------------
@@ -17,7 +17,7 @@ Quartus Prime Version 21.1.1 Build 850 06/23/2022 SJ Lite Edition
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2022  Intel Corporation. All rights reserved.
+Copyright (C) 2020  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
 and other software and tools, and any partner logic 
 functions, and any output files from any of the foregoing 
@@ -37,50 +37,50 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Tue Jun 13 00:36:03 2023 ;
+; EDA Netlist Writer Status ; Successful - Tue Jun 13 10:32:24 2023 ;
 ; Revision Name             ; Ultrasound_controller                 ;
-; Top-level Entity Name     ; ultrasound_reader                     ;
+; Top-level Entity Name     ; ultrasound_controller                 ;
 ; Family                    ; Cyclone IV E                          ;
 ; Simulation Files Creation ; Successful                            ;
 +---------------------------+---------------------------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------+
-; Simulation Settings                                                                                                          ;
-+---------------------------------------------------------------------------------------------------+--------------------------+
-; Option                                                                                            ; Setting                  ;
-+---------------------------------------------------------------------------------------------------+--------------------------+
-; Tool Name                                                                                         ; Questa Intel FPGA (VHDL) ;
-; Generate functional simulation netlist                                                            ; Off                      ;
-; Time scale                                                                                        ; 1 ps                     ;
-; Truncate long hierarchy paths                                                                     ; Off                      ;
-; Map illegal HDL characters                                                                        ; Off                      ;
-; Flatten buses into individual nodes                                                               ; Off                      ;
-; Maintain hierarchy                                                                                ; Off                      ;
-; Bring out device-wide set/reset signals as ports                                                  ; Off                      ;
-; Enable glitch filtering                                                                           ; Off                      ;
-; Do not write top level VHDL entity                                                                ; Off                      ;
-; Disable detection of setup and hold time violations in the input registers of bi-directional pins ; Off                      ;
-; Architecture name in VHDL output netlist                                                          ; structure                ;
-; Generate third-party EDA tool command script for RTL functional simulation                        ; Off                      ;
-; Generate third-party EDA tool command script for gate-level simulation                            ; Off                      ;
-+---------------------------------------------------------------------------------------------------+--------------------------+
++----------------------------------------------------------------------------------------------------------------------------+
+; Simulation Settings                                                                                                        ;
++---------------------------------------------------------------------------------------------------+------------------------+
+; Option                                                                                            ; Setting                ;
++---------------------------------------------------------------------------------------------------+------------------------+
+; Tool Name                                                                                         ; ModelSim-Altera (VHDL) ;
+; Generate functional simulation netlist                                                            ; Off                    ;
+; Time scale                                                                                        ; 1 ps                   ;
+; Truncate long hierarchy paths                                                                     ; Off                    ;
+; Map illegal HDL characters                                                                        ; Off                    ;
+; Flatten buses into individual nodes                                                               ; Off                    ;
+; Maintain hierarchy                                                                                ; Off                    ;
+; Bring out device-wide set/reset signals as ports                                                  ; Off                    ;
+; Enable glitch filtering                                                                           ; Off                    ;
+; Do not write top level VHDL entity                                                                ; Off                    ;
+; Disable detection of setup and hold time violations in the input registers of bi-directional pins ; Off                    ;
+; Architecture name in VHDL output netlist                                                          ; structure              ;
+; Generate third-party EDA tool command script for RTL functional simulation                        ; Off                    ;
+; Generate third-party EDA tool command script for gate-level simulation                            ; Off                    ;
++---------------------------------------------------------------------------------------------------+------------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Simulation Generated Files                                                                                                                                                    ;
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Generated Files                                                                                                                                                               ;
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; /home/lettner/OneDrive/Studium/Studium_Module/Hardwarepraktikum_2023/ex06/ultrasound_controller_restored/simulation/modelsim/Ultrasound_controller_6_1200mv_85c_slow.vho      ;
-; /home/lettner/OneDrive/Studium/Studium_Module/Hardwarepraktikum_2023/ex06/ultrasound_controller_restored/simulation/modelsim/Ultrasound_controller_6_1200mv_0c_slow.vho       ;
-; /home/lettner/OneDrive/Studium/Studium_Module/Hardwarepraktikum_2023/ex06/ultrasound_controller_restored/simulation/modelsim/Ultrasound_controller_min_1200mv_0c_fast.vho     ;
-; /home/lettner/OneDrive/Studium/Studium_Module/Hardwarepraktikum_2023/ex06/ultrasound_controller_restored/simulation/modelsim/Ultrasound_controller.vho                        ;
-; /home/lettner/OneDrive/Studium/Studium_Module/Hardwarepraktikum_2023/ex06/ultrasound_controller_restored/simulation/modelsim/Ultrasound_controller_6_1200mv_85c_vhd_slow.sdo  ;
-; /home/lettner/OneDrive/Studium/Studium_Module/Hardwarepraktikum_2023/ex06/ultrasound_controller_restored/simulation/modelsim/Ultrasound_controller_6_1200mv_0c_vhd_slow.sdo   ;
-; /home/lettner/OneDrive/Studium/Studium_Module/Hardwarepraktikum_2023/ex06/ultrasound_controller_restored/simulation/modelsim/Ultrasound_controller_min_1200mv_0c_vhd_fast.sdo ;
-; /home/lettner/OneDrive/Studium/Studium_Module/Hardwarepraktikum_2023/ex06/ultrasound_controller_restored/simulation/modelsim/Ultrasound_controller_vhd.sdo                    ;
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Simulation Generated Files                                                                                                                                        ;
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Generated Files                                                                                                                                                   ;
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; C:/Users/lettner/Documents/GitHub/Hardwarepraktikum_2023/ex06/ultrasound_controller_restored/simulation/modelsim/Ultrasound_controller_6_1200mv_85c_slow.vho      ;
+; C:/Users/lettner/Documents/GitHub/Hardwarepraktikum_2023/ex06/ultrasound_controller_restored/simulation/modelsim/Ultrasound_controller_6_1200mv_0c_slow.vho       ;
+; C:/Users/lettner/Documents/GitHub/Hardwarepraktikum_2023/ex06/ultrasound_controller_restored/simulation/modelsim/Ultrasound_controller_min_1200mv_0c_fast.vho     ;
+; C:/Users/lettner/Documents/GitHub/Hardwarepraktikum_2023/ex06/ultrasound_controller_restored/simulation/modelsim/Ultrasound_controller.vho                        ;
+; C:/Users/lettner/Documents/GitHub/Hardwarepraktikum_2023/ex06/ultrasound_controller_restored/simulation/modelsim/Ultrasound_controller_6_1200mv_85c_vhd_slow.sdo  ;
+; C:/Users/lettner/Documents/GitHub/Hardwarepraktikum_2023/ex06/ultrasound_controller_restored/simulation/modelsim/Ultrasound_controller_6_1200mv_0c_vhd_slow.sdo   ;
+; C:/Users/lettner/Documents/GitHub/Hardwarepraktikum_2023/ex06/ultrasound_controller_restored/simulation/modelsim/Ultrasound_controller_min_1200mv_0c_vhd_fast.sdo ;
+; C:/Users/lettner/Documents/GitHub/Hardwarepraktikum_2023/ex06/ultrasound_controller_restored/simulation/modelsim/Ultrasound_controller_vhd.sdo                    ;
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
 +-----------------------------+
@@ -88,22 +88,22 @@ https://fpgasoftware.intel.com/eula.
 +-----------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
-    Info: Version 21.1.1 Build 850 06/23/2022 SJ Lite Edition
-    Info: Processing started: Tue Jun 13 00:36:02 2023
+    Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+    Info: Processing started: Tue Jun 13 10:32:24 2023
 Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off Ultrasound_controller -c Ultrasound_controller
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (204019): Generated file Ultrasound_controller_6_1200mv_85c_slow.vho in folder "/home/lettner/OneDrive/Studium/Studium_Module/Hardwarepraktikum_2023/ex06/ultrasound_controller_restored/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file Ultrasound_controller_6_1200mv_0c_slow.vho in folder "/home/lettner/OneDrive/Studium/Studium_Module/Hardwarepraktikum_2023/ex06/ultrasound_controller_restored/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file Ultrasound_controller_min_1200mv_0c_fast.vho in folder "/home/lettner/OneDrive/Studium/Studium_Module/Hardwarepraktikum_2023/ex06/ultrasound_controller_restored/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file Ultrasound_controller.vho in folder "/home/lettner/OneDrive/Studium/Studium_Module/Hardwarepraktikum_2023/ex06/ultrasound_controller_restored/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file Ultrasound_controller_6_1200mv_85c_vhd_slow.sdo in folder "/home/lettner/OneDrive/Studium/Studium_Module/Hardwarepraktikum_2023/ex06/ultrasound_controller_restored/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file Ultrasound_controller_6_1200mv_0c_vhd_slow.sdo in folder "/home/lettner/OneDrive/Studium/Studium_Module/Hardwarepraktikum_2023/ex06/ultrasound_controller_restored/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file Ultrasound_controller_min_1200mv_0c_vhd_fast.sdo in folder "/home/lettner/OneDrive/Studium/Studium_Module/Hardwarepraktikum_2023/ex06/ultrasound_controller_restored/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file Ultrasound_controller_vhd.sdo in folder "/home/lettner/OneDrive/Studium/Studium_Module/Hardwarepraktikum_2023/ex06/ultrasound_controller_restored/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file Ultrasound_controller_6_1200mv_85c_slow.vho in folder "C:/Users/lettner/Documents/GitHub/Hardwarepraktikum_2023/ex06/ultrasound_controller_restored/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file Ultrasound_controller_6_1200mv_0c_slow.vho in folder "C:/Users/lettner/Documents/GitHub/Hardwarepraktikum_2023/ex06/ultrasound_controller_restored/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file Ultrasound_controller_min_1200mv_0c_fast.vho in folder "C:/Users/lettner/Documents/GitHub/Hardwarepraktikum_2023/ex06/ultrasound_controller_restored/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file Ultrasound_controller.vho in folder "C:/Users/lettner/Documents/GitHub/Hardwarepraktikum_2023/ex06/ultrasound_controller_restored/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file Ultrasound_controller_6_1200mv_85c_vhd_slow.sdo in folder "C:/Users/lettner/Documents/GitHub/Hardwarepraktikum_2023/ex06/ultrasound_controller_restored/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file Ultrasound_controller_6_1200mv_0c_vhd_slow.sdo in folder "C:/Users/lettner/Documents/GitHub/Hardwarepraktikum_2023/ex06/ultrasound_controller_restored/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file Ultrasound_controller_min_1200mv_0c_vhd_fast.sdo in folder "C:/Users/lettner/Documents/GitHub/Hardwarepraktikum_2023/ex06/ultrasound_controller_restored/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file Ultrasound_controller_vhd.sdo in folder "C:/Users/lettner/Documents/GitHub/Hardwarepraktikum_2023/ex06/ultrasound_controller_restored/simulation/modelsim/" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 625 megabytes
-    Info: Processing ended: Tue Jun 13 00:36:03 2023
-    Info: Elapsed time: 00:00:01
+    Info: Peak virtual memory: 4649 megabytes
+    Info: Processing ended: Tue Jun 13 10:32:24 2023
+    Info: Elapsed time: 00:00:00
     Info: Total CPU time (on all processors): 00:00:01
 
 

@@ -8,27 +8,27 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 d/home/lettner/OneDrive/Studium/Studium_Module/Hardwarepraktikum_2023/ex06/ultrasound_controller_restored/simulation/modelsim
+Z0 dC:/Users/lettner/Documents/GitHub/Hardwarepraktikum_2023/ex06/ultrasound_controller_restored/simulation/modelsim
 Eultrasound_controller
-Z1 w1686607703
+Z1 w1686644125
 Z2 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
 Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z4 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
 !i122 0
 R0
-Z5 8/home/lettner/OneDrive/Studium/Studium_Module/Hardwarepraktikum_2023/ex06/ultrasound_controller_restored/vhdl/ultrasound_controller.vhd
-Z6 F/home/lettner/OneDrive/Studium/Studium_Module/Hardwarepraktikum_2023/ex06/ultrasound_controller_restored/vhdl/ultrasound_controller.vhd
+Z5 8C:/Users/lettner/Documents/GitHub/Hardwarepraktikum_2023/ex06/ultrasound_controller_restored/vhdl/ultrasound_controller.vhd
+Z6 FC:/Users/lettner/Documents/GitHub/Hardwarepraktikum_2023/ex06/ultrasound_controller_restored/vhdl/ultrasound_controller.vhd
 l0
 L5 1
 VjP4MUl=NRPez2NlnYXE<P0
 !s100 QllD:a;?ZNO4[XUL^ncZU1
 Z7 OV;C;2020.1;71
 31
-Z8 !s110 1686607764
+Z8 !s110 1686645208
 !i10b 1
-Z9 !s108 1686607764.000000
-Z10 !s90 -reportprogress|300|-93|-work|work|/home/lettner/OneDrive/Studium/Studium_Module/Hardwarepraktikum_2023/ex06/ultrasound_controller_restored/vhdl/ultrasound_controller.vhd|
-Z11 !s107 /home/lettner/OneDrive/Studium/Studium_Module/Hardwarepraktikum_2023/ex06/ultrasound_controller_restored/vhdl/ultrasound_controller.vhd|
+Z9 !s108 1686645208.000000
+Z10 !s90 -reportprogress|300|-93|-work|work|C:/Users/lettner/Documents/GitHub/Hardwarepraktikum_2023/ex06/ultrasound_controller_restored/vhdl/ultrasound_controller.vhd|
+Z11 !s107 C:/Users/lettner/Documents/GitHub/Hardwarepraktikum_2023/ex06/ultrasound_controller_restored/vhdl/ultrasound_controller.vhd|
 !i113 1
 Z12 o-93 -work work
 Z13 tExplicit 1 CvgOpt 0
@@ -53,13 +53,13 @@ R11
 R12
 R13
 Eultrasound_controller_vhd_tst
-Z14 w1434370116
+Z14 w1686644591
 R3
 R4
 !i122 1
 R0
-Z15 8/home/lettner/OneDrive/Studium/Studium_Module/Hardwarepraktikum_2023/ex06/ultrasound_controller_restored/simulation/modelsim/ultrasound_controller.vht
-Z16 F/home/lettner/OneDrive/Studium/Studium_Module/Hardwarepraktikum_2023/ex06/ultrasound_controller_restored/simulation/modelsim/ultrasound_controller.vht
+Z15 8C:/Users/lettner/Documents/GitHub/Hardwarepraktikum_2023/ex06/ultrasound_controller_restored/simulation/modelsim/ultrasound_controller.vht
+Z16 FC:/Users/lettner/Documents/GitHub/Hardwarepraktikum_2023/ex06/ultrasound_controller_restored/simulation/modelsim/ultrasound_controller.vht
 l0
 L31 1
 Vl95kz7:?kH7o:9:i0Fc351
@@ -69,8 +69,8 @@ R7
 R8
 !i10b 1
 R9
-Z17 !s90 -reportprogress|300|-93|-work|work|/home/lettner/OneDrive/Studium/Studium_Module/Hardwarepraktikum_2023/ex06/ultrasound_controller_restored/simulation/modelsim/ultrasound_controller.vht|
-!s107 /home/lettner/OneDrive/Studium/Studium_Module/Hardwarepraktikum_2023/ex06/ultrasound_controller_restored/simulation/modelsim/ultrasound_controller.vht|
+Z17 !s90 -reportprogress|300|-93|-work|work|C:/Users/lettner/Documents/GitHub/Hardwarepraktikum_2023/ex06/ultrasound_controller_restored/simulation/modelsim/ultrasound_controller.vht|
+!s107 C:/Users/lettner/Documents/GitHub/Hardwarepraktikum_2023/ex06/ultrasound_controller_restored/simulation/modelsim/ultrasound_controller.vht|
 !i113 1
 R12
 R13
@@ -80,16 +80,16 @@ R4
 DEx4 work 29 ultrasound_controller_vhd_tst 0 22 l95kz7:?kH7o:9:i0Fc351
 !i122 1
 l50
-L33 69
-V;<o6Gm=>AUWdTE_>OzBEA0
-!s100 1@[0TVNh@NZ@C2f7j9o>Z2
+L33 70
+VM7QWAi6]Cc4OUNERPJdSZ0
+!s100 c@;T3lcf5TPAHa<Un?15U3
 R7
 31
 R8
 !i10b 1
 R9
 R17
-Z18 !s107 /home/lettner/OneDrive/Studium/Studium_Module/Hardwarepraktikum_2023/ex06/ultrasound_controller_restored/simulation/modelsim/ultrasound_controller.vht|
+Z18 !s107 C:/Users/lettner/Documents/GitHub/Hardwarepraktikum_2023/ex06/ultrasound_controller_restored/simulation/modelsim/ultrasound_controller.vht|
 !i113 1
 R12
 R13

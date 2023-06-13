@@ -1,4 +1,4 @@
-set tool_name "Questa Intel FPGA (VHDL)"
+set tool_name "ModelSim-Altera (VHDL)"
 set corner_file_list {
     {{"Slow -6 1.2V 85 Model"} {Ultrasound_controller_6_1200mv_85c_slow.vho Ultrasound_controller_6_1200mv_85c_vhd_slow.sdo}}
     {{"Slow -6 1.2V 0 Model"} {Ultrasound_controller_6_1200mv_0c_slow.vho Ultrasound_controller_6_1200mv_0c_vhd_slow.sdo}}
