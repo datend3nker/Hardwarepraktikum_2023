@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Ultrasound_controller
-Wed Jun 14 12:10:22 2023
+Wed Jun 14 18:32:23 2023
 Quartus Prime Version 21.1.1 Build 850 06/23/2022 SJ Lite Edition
 
 
@@ -43,15 +43,15 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Jun 14 12:10:22 2023       ;
+; Analysis & Synthesis Status        ; Successful - Wed Jun 14 18:32:23 2023       ;
 ; Quartus Prime Version              ; 21.1.1 Build 850 06/23/2022 SJ Lite Edition ;
 ; Revision Name                      ; Ultrasound_controller                       ;
 ; Top-level Entity Name              ; motor_controller                            ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 54                                          ;
-;     Total combinational functions  ; 54                                          ;
-;     Dedicated logic registers      ; 31                                          ;
-; Total registers                    ; 31                                          ;
+; Total logic elements               ; 1                                           ;
+;     Total combinational functions  ; 0                                           ;
+;     Dedicated logic registers      ; 1                                           ;
+; Total registers                    ; 1                                           ;
 ; Total pins                         ; 14                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
@@ -155,12 +155,10 @@ https://fpgasoftware.intel.com/eula.
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 4           ;
+; Maximum used               ; 1           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.0%      ;
-;     Processors 3-4         ;   0.0%      ;
 +----------------------------+-------------+
 
 
@@ -173,36 +171,36 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------+-----------------+-----------------+------------------------------------------------------------------------------------------------------------------------------------+---------+
 
 
-+-----------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary               ;
-+---------------------------------------------+-------------+
-; Resource                                    ; Usage       ;
-+---------------------------------------------+-------------+
-; Estimated Total logic elements              ; 54          ;
-;                                             ;             ;
-; Total combinational functions               ; 54          ;
-; Logic element usage by number of LUT inputs ;             ;
-;     -- 4 input functions                    ; 10          ;
-;     -- 3 input functions                    ; 10          ;
-;     -- <=2 input functions                  ; 34          ;
-;                                             ;             ;
-; Logic elements by mode                      ;             ;
-;     -- normal mode                          ; 15          ;
-;     -- arithmetic mode                      ; 39          ;
-;                                             ;             ;
-; Total registers                             ; 31          ;
-;     -- Dedicated logic registers            ; 31          ;
-;     -- I/O registers                        ; 0           ;
-;                                             ;             ;
-; I/O pins                                    ; 14          ;
-;                                             ;             ;
-; Embedded Multiplier 9-bit elements          ; 0           ;
-;                                             ;             ;
-; Maximum fan-out node                        ; LessThan0~9 ;
-; Maximum fan-out                             ; 31          ;
-; Total fan-out                               ; 246         ;
-; Average fan-out                             ; 2.18        ;
-+---------------------------------------------+-------------+
++----------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                    ;
++---------------------------------------------+------------------+
+; Resource                                    ; Usage            ;
++---------------------------------------------+------------------+
+; Estimated Total logic elements              ; 1                ;
+;                                             ;                  ;
+; Total combinational functions               ; 0                ;
+; Logic element usage by number of LUT inputs ;                  ;
+;     -- 4 input functions                    ; 0                ;
+;     -- 3 input functions                    ; 0                ;
+;     -- <=2 input functions                  ; 0                ;
+;                                             ;                  ;
+; Logic elements by mode                      ;                  ;
+;     -- normal mode                          ; 0                ;
+;     -- arithmetic mode                      ; 0                ;
+;                                             ;                  ;
+; Total registers                             ; 1                ;
+;     -- Dedicated logic registers            ; 1                ;
+;     -- I/O registers                        ; 0                ;
+;                                             ;                  ;
+; I/O pins                                    ; 14               ;
+;                                             ;                  ;
+; Embedded Multiplier 9-bit elements          ; 0                ;
+;                                             ;                  ;
+; Maximum fan-out node                        ; direction_signal ;
+; Maximum fan-out                             ; 2                ;
+; Total fan-out                               ; 18               ;
+; Average fan-out                             ; 0.62             ;
++---------------------------------------------+------------------+
 
 
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -210,7 +208,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+------------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name      ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+------------------+--------------+
-; |motor_controller          ; 54 (54)             ; 31 (31)                   ; 0           ; 0            ; 0       ; 0         ; 14   ; 0            ; |motor_controller   ; motor_controller ; work         ;
+; |motor_controller          ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 14   ; 0            ; |motor_controller   ; motor_controller ; work         ;
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -220,8 +218,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 31    ;
-; Number of registers using Synchronous Clear  ; 31    ;
+; Total registers                              ; 1     ;
+; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
@@ -236,20 +234,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 14                          ;
-; cycloneiii_ff         ; 31                          ;
-;     SCLR              ; 31                          ;
-; cycloneiii_lcell_comb ; 54                          ;
-;     arith             ; 39                          ;
-;         2 data inputs ; 30                          ;
-;         3 data inputs ; 9                           ;
-;     normal            ; 15                          ;
+; cycloneiii_ff         ; 1                           ;
+;     plain             ; 1                           ;
+; cycloneiii_lcell_comb ; 1                           ;
+;     normal            ; 1                           ;
 ;         1 data inputs ; 1                           ;
-;         2 data inputs ; 3                           ;
-;         3 data inputs ; 1                           ;
-;         4 data inputs ; 10                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 4.00                        ;
-; Average LUT depth     ; 3.41                        ;
+; Max LUT depth         ; 1.00                        ;
+; Average LUT depth     ; 0.50                        ;
 +-----------------------+-----------------------------+
 
 
@@ -268,7 +260,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 21.1.1 Build 850 06/23/2022 SJ Lite Edition
-    Info: Processing started: Wed Jun 14 12:10:11 2023
+    Info: Processing started: Wed Jun 14 18:32:13 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Ultrasound_controller -c Ultrasound_controller
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -276,7 +268,7 @@ Info (12021): Found 2 design units, including 1 entities, in source file vhdl/ro
     Info (12022): Found design unit 1: robot_controller-behaviour File: /home/lettner/OneDrive/Studium/Studium_Module/Hardwarepraktikum_2023/ex06/ultrasound_controller_restored/vhdl/robot_controller.vhd Line: 18
     Info (12023): Found entity 1: robot_controller File: /home/lettner/OneDrive/Studium/Studium_Module/Hardwarepraktikum_2023/ex06/ultrasound_controller_restored/vhdl/robot_controller.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file vhdl/motor_controller.vhd
-    Info (12022): Found design unit 1: motor_controller-behaviour File: /home/lettner/OneDrive/Studium/Studium_Module/Hardwarepraktikum_2023/ex06/ultrasound_controller_restored/vhdl/motor_controller.vhd Line: 17
+    Info (12022): Found design unit 1: motor_controller-behavior File: /home/lettner/OneDrive/Studium/Studium_Module/Hardwarepraktikum_2023/ex06/ultrasound_controller_restored/vhdl/motor_controller.vhd Line: 16
     Info (12023): Found entity 1: motor_controller File: /home/lettner/OneDrive/Studium/Studium_Module/Hardwarepraktikum_2023/ex06/ultrasound_controller_restored/vhdl/motor_controller.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file vhdl/lcd_driver2.vhd
     Info (12022): Found design unit 1: lcd_driver2-behavior File: /home/lettner/OneDrive/Studium/Studium_Module/Hardwarepraktikum_2023/ex06/ultrasound_controller_restored/vhdl/lcd_driver2.vhd Line: 34
@@ -296,14 +288,25 @@ Info (12127): Elaborating entity "motor_controller" for the top level hierarchy
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 68 device resources after synthesis - the final resource count might be different
+Warning (21074): Design contains 10 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "speed[0]" File: /home/lettner/OneDrive/Studium/Studium_Module/Hardwarepraktikum_2023/ex06/ultrasound_controller_restored/vhdl/motor_controller.vhd Line: 9
+    Warning (15610): No output dependent on input pin "speed[1]" File: /home/lettner/OneDrive/Studium/Studium_Module/Hardwarepraktikum_2023/ex06/ultrasound_controller_restored/vhdl/motor_controller.vhd Line: 9
+    Warning (15610): No output dependent on input pin "speed[2]" File: /home/lettner/OneDrive/Studium/Studium_Module/Hardwarepraktikum_2023/ex06/ultrasound_controller_restored/vhdl/motor_controller.vhd Line: 9
+    Warning (15610): No output dependent on input pin "speed[3]" File: /home/lettner/OneDrive/Studium/Studium_Module/Hardwarepraktikum_2023/ex06/ultrasound_controller_restored/vhdl/motor_controller.vhd Line: 9
+    Warning (15610): No output dependent on input pin "speed[4]" File: /home/lettner/OneDrive/Studium/Studium_Module/Hardwarepraktikum_2023/ex06/ultrasound_controller_restored/vhdl/motor_controller.vhd Line: 9
+    Warning (15610): No output dependent on input pin "speed[5]" File: /home/lettner/OneDrive/Studium/Studium_Module/Hardwarepraktikum_2023/ex06/ultrasound_controller_restored/vhdl/motor_controller.vhd Line: 9
+    Warning (15610): No output dependent on input pin "speed[6]" File: /home/lettner/OneDrive/Studium/Studium_Module/Hardwarepraktikum_2023/ex06/ultrasound_controller_restored/vhdl/motor_controller.vhd Line: 9
+    Warning (15610): No output dependent on input pin "speed[7]" File: /home/lettner/OneDrive/Studium/Studium_Module/Hardwarepraktikum_2023/ex06/ultrasound_controller_restored/vhdl/motor_controller.vhd Line: 9
+    Warning (15610): No output dependent on input pin "speed[8]" File: /home/lettner/OneDrive/Studium/Studium_Module/Hardwarepraktikum_2023/ex06/ultrasound_controller_restored/vhdl/motor_controller.vhd Line: 9
+    Warning (15610): No output dependent on input pin "speed[9]" File: /home/lettner/OneDrive/Studium/Studium_Module/Hardwarepraktikum_2023/ex06/ultrasound_controller_restored/vhdl/motor_controller.vhd Line: 9
+Info (21057): Implemented 15 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 12 input pins
     Info (21059): Implemented 2 output pins
-    Info (21061): Implemented 54 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 441 megabytes
-    Info: Processing ended: Wed Jun 14 12:10:22 2023
-    Info: Elapsed time: 00:00:11
-    Info: Total CPU time (on all processors): 00:00:29
+    Info (21061): Implemented 1 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 12 warnings
+    Info: Peak virtual memory: 428 megabytes
+    Info: Processing ended: Wed Jun 14 18:32:23 2023
+    Info: Elapsed time: 00:00:10
+    Info: Total CPU time (on all processors): 00:00:27
 
 

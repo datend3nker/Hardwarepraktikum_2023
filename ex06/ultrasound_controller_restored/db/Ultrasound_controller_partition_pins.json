@@ -16,46 +16,6 @@
 					"strict" : false
 				},
 				{
-					"name" : "speed[9]",
-					"strict" : false
-				},
-				{
-					"name" : "speed[8]",
-					"strict" : false
-				},
-				{
-					"name" : "speed[7]",
-					"strict" : false
-				},
-				{
-					"name" : "speed[6]",
-					"strict" : false
-				},
-				{
-					"name" : "speed[5]",
-					"strict" : false
-				},
-				{
-					"name" : "speed[4]",
-					"strict" : false
-				},
-				{
-					"name" : "speed[3]",
-					"strict" : false
-				},
-				{
-					"name" : "speed[2]",
-					"strict" : false
-				},
-				{
-					"name" : "speed[1]",
-					"strict" : false
-				},
-				{
-					"name" : "speed[0]",
-					"strict" : false
-				},
-				{
 					"name" : "clk_50",
 					"strict" : false
 				}

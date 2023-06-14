@@ -1,5 +1,5 @@
 Flow report for Ultrasound_controller
-Wed Jun 14 12:10:38 2023
+Wed Jun 14 18:32:38 2023
 Quartus Prime Version 21.1.1 Build 850 06/23/2022 SJ Lite Edition
 
 
@@ -41,17 +41,17 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Wed Jun 14 12:10:38 2023       ;
+; Flow Status                        ; Successful - Wed Jun 14 18:32:38 2023       ;
 ; Quartus Prime Version              ; 21.1.1 Build 850 06/23/2022 SJ Lite Edition ;
 ; Revision Name                      ; Ultrasound_controller                       ;
 ; Top-level Entity Name              ; motor_controller                            ;
 ; Family                             ; Cyclone IV E                                ;
 ; Device                             ; EP4CE22F17C6                                ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 54 / 22,320 ( < 1 % )                       ;
-;     Total combinational functions  ; 54 / 22,320 ( < 1 % )                       ;
-;     Dedicated logic registers      ; 31 / 22,320 ( < 1 % )                       ;
-; Total registers                    ; 31                                          ;
+; Total logic elements               ; 1 / 22,320 ( < 1 % )                        ;
+;     Total combinational functions  ; 0 / 22,320 ( 0 % )                          ;
+;     Dedicated logic registers      ; 1 / 22,320 ( < 1 % )                        ;
+; Total registers                    ; 1                                           ;
 ; Total pins                         ; 14 / 154 ( 9 % )                            ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0 / 608,256 ( 0 % )                         ;
@@ -65,7 +65,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+-----------------------+
 ; Option            ; Setting               ;
 +-------------------+-----------------------+
-; Start date & time ; 06/14/2023 12:10:11   ;
+; Start date & time ; 06/14/2023 18:32:13   ;
 ; Main task         ; Compilation           ;
 ; Revision Name     ; Ultrasound_controller ;
 +-------------------+-----------------------+
@@ -76,7 +76,7 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------------+-----------------------------------------------+-----------------------+------------------+-------------------------------+
 ; Assignment Name                      ; Value                                         ; Default Value         ; Entity Name      ; Section Id                    ;
 +--------------------------------------+-----------------------------------------------+-----------------------+------------------+-------------------------------+
-; COMPILER_SIGNATURE_ID                ; 284420849182.168673741136286                  ; --                    ; --               ; --                            ;
+; COMPILER_SIGNATURE_ID                ; 284420849182.168676033345197                  ; --                    ; --               ; --                            ;
 ; EDA_DESIGN_INSTANCE_NAME             ; i1                                            ; --                    ; --               ; motor_controller_vhd_tst      ;
 ; EDA_DESIGN_INSTANCE_NAME             ; i1                                            ; --                    ; --               ; ultrasound_controller_vhd_tst ;
 ; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; motor_controller_vhd_tst                      ; --                    ; --               ; eda_simulation                ;
@@ -113,12 +113,12 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:11     ; 1.0                     ; 437 MB              ; 00:00:29                           ;
-; Fitter               ; 00:00:07     ; 1.0                     ; 1016 MB             ; 00:00:09                           ;
-; Assembler            ; 00:00:02     ; 1.0                     ; 360 MB              ; 00:00:01                           ;
-; Timing Analyzer      ; 00:00:02     ; 1.0                     ; 502 MB              ; 00:00:02                           ;
-; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 613 MB              ; 00:00:01                           ;
-; Total                ; 00:00:22     ; --                      ; --                  ; 00:00:42                           ;
+; Analysis & Synthesis ; 00:00:09     ; 1.0                     ; 428 MB              ; 00:00:27                           ;
+; Fitter               ; 00:00:05     ; 1.0                     ; 1002 MB             ; 00:00:07                           ;
+; Assembler            ; 00:00:02     ; 1.0                     ; 363 MB              ; 00:00:01                           ;
+; Timing Analyzer      ; 00:00:02     ; 1.0                     ; 499 MB              ; 00:00:02                           ;
+; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 612 MB              ; 00:00:01                           ;
+; Total                ; 00:00:18     ; --                      ; --                  ; 00:00:38                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

@@ -1,12 +1,12 @@
-Analysis & Synthesis Status : Successful - Wed Jun 14 12:10:22 2023
+Analysis & Synthesis Status : Successful - Wed Jun 14 18:32:23 2023
 Quartus Prime Version : 21.1.1 Build 850 06/23/2022 SJ Lite Edition
 Revision Name : Ultrasound_controller
 Top-level Entity Name : motor_controller
 Family : Cyclone IV E
-Total logic elements : 54
-    Total combinational functions : 54
-    Dedicated logic registers : 31
-Total registers : 31
+Total logic elements : 1
+    Total combinational functions : 0
+    Dedicated logic registers : 1
+Total registers : 1
 Total pins : 14
 Total virtual pins : 0
 Total memory bits : 0
