@@ -21,12 +21,14 @@ begin
 	motor_B_direction <= '1';
 	
 	motor_A_speed <= (others => '0') when
-		unsigned(distance_us1) < 30 or
-		unsigned(distance_us1) < 30 or
-		unsigned(distance_us1) < 30 else (3 => '1', others => '0');
+		unsigned(distance_us1) < 50 or
+		unsigned(distance_us1) < 50 or
+		unsigned(distance_us1) < 50 else (3 => '1', others => '0');
 
 	motor_B_speed <= (others => '0') when
-		unsigned(distance_us1) < 30 or
-		unsigned(distance_us1) < 30 or
-		unsigned(distance_us1) < 30 else (3 => '1', others => '0');
+		unsigned(distance_us1) < 50 or
+		unsigned(distance_us1) < 50 or
+		unsigned(distance_us1) < 50 else (3 => '1', others => '0');
+		
+	-- sobald ein us meldet, dass in der Naehe ein hindernis ist, stoppt der roboter
 end behaviour;

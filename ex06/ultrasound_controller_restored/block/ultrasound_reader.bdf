@@ -22,7 +22,7 @@ https://fpgasoftware.intel.com/eula.
 (header "graphic" (version "1.4"))
 (pin
 	(input)
-	(rect 64 224 240 240)
+	(rect -136 224 40 240)
 	(text "INPUT" (rect 133 0 168 13)(font "Arial" (font_size 6)))
 	(text "clk_50" (rect 9 0 50 14)(font "Arial" ))
 	(pt 176 8)
@@ -35,23 +35,7 @@ https://fpgasoftware.intel.com/eula.
 		(line (pt 117 12)(pt 121 8))
 	)
 	(text "VCC" (rect 136 7 161 20)(font "Arial" (font_size 6)))
-	(annotation_block (location)(rect 8 224 64 240))
-)
-(pin
-	(input)
-	(rect 584 696 752 712)
-	(text "INPUT" (rect 125 0 160 13)(font "Arial" (font_size 6)))
-	(text "direction" (rect 5 0 60 14)(font "Arial" ))
-	(pt 168 8)
-	(drawing
-		(line (pt 84 12)(pt 109 12))
-		(line (pt 84 4)(pt 109 4))
-		(line (pt 113 8)(pt 168 8))
-		(line (pt 84 12)(pt 84 4))
-		(line (pt 109 4)(pt 113 8))
-		(line (pt 109 12)(pt 113 8))
-	)
-	(text "VCC" (rect 128 7 153 20)(font "Arial" (font_size 6)))
+	(annotation_block (location)(rect -192 224 -136 240))
 )
 (pin
 	(output)
@@ -122,9 +106,9 @@ https://fpgasoftware.intel.com/eula.
 )
 (pin
 	(output)
-	(rect 1064 664 1248 680)
+	(rect 1504 544 1706 560)
 	(text "OUTPUT" (rect 1 0 50 13)(font "Arial" (font_size 6)))
-	(text "motot_signal1" (rect 90 0 178 14)(font "Arial" ))
+	(text "motor_signal_A1" (rect 90 0 196 14)(font "Arial" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8))
@@ -135,12 +119,13 @@ https://fpgasoftware.intel.com/eula.
 		(line (pt 82 8)(pt 78 12))
 		(line (pt 78 12)(pt 82 8))
 	)
+	(annotation_block (location)(rect 1706 560 1778 584))
 )
 (pin
 	(output)
-	(rect 1064 680 1252 696)
+	(rect 1512 568 1716 584)
 	(text "OUTPUT" (rect 1 0 50 13)(font "Arial" (font_size 6)))
-	(text "motot_signal2" (rect 90 0 182 16)(font "Intel Clear" ))
+	(text "motor_signal_A2" (rect 90 0 198 16)(font "Intel Clear" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8))
@@ -151,6 +136,41 @@ https://fpgasoftware.intel.com/eula.
 		(line (pt 82 8)(pt 78 12))
 		(line (pt 78 12)(pt 82 8))
 	)
+	(annotation_block (location)(rect 1716 584 1788 608))
+)
+(pin
+	(output)
+	(rect 1552 672 1756 688)
+	(text "OUTPUT" (rect 1 0 50 13)(font "Arial" (font_size 6)))
+	(text "motor_signal_B1" (rect 90 0 198 16)(font "Intel Clear" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+	(annotation_block (location)(rect 1756 688 1828 712))
+)
+(pin
+	(output)
+	(rect 1552 712 1756 728)
+	(text "OUTPUT" (rect 1 0 50 13)(font "Arial" (font_size 6)))
+	(text "motor_signal_B2" (rect 90 0 198 16)(font "Intel Clear" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+	(annotation_block (location)(rect 1756 728 1828 752))
 )
 (pin
 	(bidir)
@@ -186,7 +206,7 @@ https://fpgasoftware.intel.com/eula.
 		(line (pt 52 8)(pt 56 12))
 	)
 	(text "VCC" (rect 4 7 29 20)(font "Arial" (font_size 6)))
-	(annotation_block (location)(rect 896 400 968 424))
+	(annotation_block (location)(rect 824 352 896 376))
 )
 (pin
 	(bidir)
@@ -204,7 +224,7 @@ https://fpgasoftware.intel.com/eula.
 		(line (pt 52 8)(pt 56 12))
 	)
 	(text "VCC" (rect 4 7 29 20)(font "Arial" (font_size 6)))
-	(annotation_block (location)(rect 896 512 960 536))
+	(annotation_block (location)(rect 816 472 880 496))
 )
 (symbol
 	(rect 520 248 712 344)
@@ -578,7 +598,7 @@ https://fpgasoftware.intel.com/eula.
 	)
 )
 (symbol
-	(rect 808 640 1008 752)
+	(rect 1248 528 1448 640)
 	(text "motor_controller" (rect 5 0 107 14)(font "Arial" ))
 	(text "inst7" (rect 8 96 39 112)(font "Intel Clear" ))
 	(port
@@ -618,6 +638,106 @@ https://fpgasoftware.intel.com/eula.
 	)
 	(drawing
 		(rectangle (rect 16 16 184 96))
+	)
+)
+(symbol
+	(rect 1304 648 1504 760)
+	(text "motor_controller" (rect 5 0 107 14)(font "Arial" ))
+	(text "inst8" (rect 8 96 39 112)(font "Intel Clear" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "clk_50" (rect 0 0 41 14)(font "Arial" ))
+		(text "clk_50" (rect 21 27 62 41)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "speed[9..0]" (rect 0 0 70 14)(font "Arial" ))
+		(text "speed[9..0]" (rect 21 43 91 57)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48)(line_width 3))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "direction" (rect 0 0 54 14)(font "Arial" ))
+		(text "direction" (rect 21 59 75 73)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 200 32)
+		(output)
+		(text "motor_signal1" (rect 0 0 89 14)(font "Arial" ))
+		(text "motor_signal1" (rect 104 27 193 41)(font "Arial" ))
+		(line (pt 200 32)(pt 184 32))
+	)
+	(port
+		(pt 200 48)
+		(output)
+		(text "motor_signal2" (rect 0 0 89 14)(font "Arial" ))
+		(text "motor_signal2" (rect 104 43 193 57)(font "Arial" ))
+		(line (pt 200 48)(pt 184 48))
+	)
+	(drawing
+		(rectangle (rect 16 16 184 96))
+	)
+)
+(symbol
+	(rect 936 648 1200 760)
+	(text "robot_controller" (rect 5 0 104 14)(font "Arial" ))
+	(text "inst11" (rect 8 96 49 112)(font "Intel Clear" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "distance_us1[7..0]" (rect 0 0 115 14)(font "Arial" ))
+		(text "distance_us1[7..0]" (rect 21 27 136 41)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "distance_us2[7..0]" (rect 0 0 115 14)(font "Arial" ))
+		(text "distance_us2[7..0]" (rect 21 43 136 57)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48)(line_width 3))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "distance_us3[7..0]" (rect 0 0 115 14)(font "Arial" ))
+		(text "distance_us3[7..0]" (rect 21 59 136 73)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64)(line_width 3))
+	)
+	(port
+		(pt 264 32)
+		(output)
+		(text "motor_A_speed[9..0]" (rect 0 0 132 14)(font "Arial" ))
+		(text "motor_A_speed[9..0]" (rect 132 27 264 41)(font "Arial" ))
+		(line (pt 264 32)(pt 248 32)(line_width 3))
+	)
+	(port
+		(pt 264 48)
+		(output)
+		(text "motor_A_direction" (rect 0 0 115 14)(font "Arial" ))
+		(text "motor_A_direction" (rect 146 43 261 57)(font "Arial" ))
+		(line (pt 264 48)(pt 248 48))
+	)
+	(port
+		(pt 264 64)
+		(output)
+		(text "motor_B_speed[9..0]" (rect 0 0 132 14)(font "Arial" ))
+		(text "motor_B_speed[9..0]" (rect 132 59 264 73)(font "Arial" ))
+		(line (pt 264 64)(pt 248 64)(line_width 3))
+	)
+	(port
+		(pt 264 80)
+		(output)
+		(text "motor_B_direction" (rect 0 0 115 14)(font "Arial" ))
+		(text "motor_B_direction" (rect 146 75 261 89)(font "Arial" ))
+		(line (pt 264 80)(pt 248 80))
+	)
+	(drawing
+		(rectangle (rect 16 16 248 96))
 	)
 )
 (connector
@@ -693,29 +813,12 @@ https://fpgasoftware.intel.com/eula.
 	(pt 944 440)
 )
 (connector
-	(pt 960 440)
-	(pt 944 440)
-)
-(connector
 	(pt 1488 496)
 	(pt 944 496)
 )
 (connector
-	(pt 944 232)
-	(pt 944 376)
-)
-(connector
 	(pt 960 376)
 	(pt 944 376)
-)
-(connector
-	(pt 960 392)
-	(pt 904 392)
-	(bus)
-)
-(connector
-	(pt 1232 232)
-	(pt 1232 344)
 )
 (connector
 	(pt 1232 344)
@@ -728,19 +831,6 @@ https://fpgasoftware.intel.com/eula.
 (connector
 	(pt 944 232)
 	(pt 1232 232)
-)
-(connector
-	(pt 240 232)
-	(pt 264 232)
-)
-(connector
-	(pt 264 232)
-	(pt 504 232)
-)
-(connector
-	(pt 712 312)
-	(pt 904 312)
-	(bus)
 )
 (connector
 	(pt 904 312)
@@ -822,23 +912,8 @@ https://fpgasoftware.intel.com/eula.
 	(pt 520 520)
 )
 (connector
-	(pt 712 424)
-	(pt 904 424)
-	(bus)
-)
-(connector
-	(pt 904 424)
-	(pt 904 408)
-	(bus)
-)
-(connector
 	(pt 904 408)
 	(pt 960 408)
-	(bus)
-)
-(connector
-	(pt 712 536)
-	(pt 920 536)
 	(bus)
 )
 (connector
@@ -904,20 +979,178 @@ https://fpgasoftware.intel.com/eula.
 	(pt 720 392)
 )
 (connector
-	(pt 752 704)
-	(pt 808 704)
+	(pt 264 232)
+	(pt 504 232)
 )
 (connector
-	(pt 1008 688)
-	(pt 1064 688)
+	(pt 40 232)
+	(pt 264 232)
 )
 (connector
-	(pt 1008 672)
-	(pt 1064 672)
+	(pt 944 440)
+	(pt 960 440)
 )
 (connector
-	(pt 1064 672)
-	(pt 1072 672)
+	(pt 944 232)
+	(pt 944 376)
+)
+(connector
+	(pt 1232 680)
+	(pt 1304 680)
+)
+(connector
+	(pt 1504 560)
+	(pt 1504 552)
+)
+(connector
+	(pt 1552 696)
+	(pt 1552 720)
+)
+(connector
+	(pt 1232 560)
+	(pt 1248 560)
+)
+(connector
+	(pt 1448 560)
+	(pt 1504 560)
+)
+(connector
+	(pt 1448 576)
+	(pt 1512 576)
+)
+(connector
+	(pt 1504 680)
+	(pt 1552 680)
+)
+(connector
+	(pt 1504 696)
+	(pt 1552 696)
+)
+(connector
+	(pt 1232 232)
+	(pt 1232 344)
+)
+(connector
+	(pt 1232 344)
+	(pt 1232 560)
+)
+(connector
+	(pt 1232 560)
+	(pt 1232 680)
+)
+(connector
+	(pt 712 424)
+	(pt 904 424)
+	(bus)
+)
+(connector
+	(pt 712 312)
+	(pt 904 312)
+	(bus)
+)
+(connector
+	(pt 1200 712)
+	(pt 1240 712)
+	(bus)
+)
+(connector
+	(pt 1240 712)
+	(pt 1240 696)
+	(bus)
+)
+(connector
+	(pt 1240 696)
+	(pt 1304 696)
+	(bus)
+)
+(connector
+	(pt 1200 728)
+	(pt 1256 728)
+)
+(connector
+	(pt 1256 728)
+	(pt 1256 712)
+)
+(connector
+	(pt 1256 712)
+	(pt 1304 712)
+)
+(connector
+	(pt 1200 696)
+	(pt 1216 696)
+)
+(connector
+	(pt 1216 696)
+	(pt 1216 592)
+)
+(connector
+	(pt 1216 592)
+	(pt 1248 592)
+)
+(connector
+	(pt 1248 576)
+	(pt 1200 576)
+	(bus)
+)
+(connector
+	(pt 1200 576)
+	(pt 1200 680)
+	(bus)
+)
+(connector
+	(pt 936 680)
+	(pt 912 680)
+	(bus)
+)
+(connector
+	(pt 912 680)
+	(pt 912 392)
+	(bus)
+)
+(connector
+	(pt 960 392)
+	(pt 912 392)
+	(bus)
+)
+(connector
+	(pt 912 392)
+	(pt 904 392)
+	(bus)
+)
+(connector
+	(pt 936 696)
+	(pt 904 696)
+	(bus)
+)
+(connector
+	(pt 904 408)
+	(pt 904 424)
+	(bus)
+)
+(connector
+	(pt 904 424)
+	(pt 904 696)
+	(bus)
+)
+(connector
+	(pt 936 712)
+	(pt 888 712)
+	(bus)
+)
+(connector
+	(pt 888 712)
+	(pt 888 536)
+	(bus)
+)
+(connector
+	(pt 712 536)
+	(pt 888 536)
+	(bus)
+)
+(connector
+	(pt 888 536)
+	(pt 920 536)
+	(bus)
 )
 (junction (pt 504 232))
 (junction (pt 944 232))
@@ -925,4 +1158,8 @@ https://fpgasoftware.intel.com/eula.
 (junction (pt 504 280))
 (junction (pt 504 392))
 (junction (pt 720 504))
-(junction (pt 1064 672))
+(junction (pt 1232 344))
+(junction (pt 1232 560))
+(junction (pt 912 392))
+(junction (pt 904 424))
+(junction (pt 888 536))
