@@ -9,39 +9,39 @@ z2
 !i10f 100
 cModel Technology
 Z0 d/home/lettner/OneDrive/Studium/Studium_Module/Hardwarepraktikum_2023/ex06/ultrasound_controller_restored/simulation/modelsim
-Eultrasound_controller
-Z1 w1434372455
+Emotor_controller
+Z1 w1434740206
 Z2 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
 Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z4 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
 !i122 0
 R0
-Z5 8/home/lettner/OneDrive/Studium/Studium_Module/Hardwarepraktikum_2023/ex06/ultrasound_controller_restored/vhdl/ultrasound_controller.vhd
-Z6 F/home/lettner/OneDrive/Studium/Studium_Module/Hardwarepraktikum_2023/ex06/ultrasound_controller_restored/vhdl/ultrasound_controller.vhd
+Z5 8/home/lettner/OneDrive/Studium/Studium_Module/Hardwarepraktikum_2023/ex06/ultrasound_controller_restored/vhdl/motor_controller.vhd
+Z6 F/home/lettner/OneDrive/Studium/Studium_Module/Hardwarepraktikum_2023/ex06/ultrasound_controller_restored/vhdl/motor_controller.vhd
 l0
-L5 1
-VjP4MUl=NRPez2NlnYXE<P0
-!s100 QllD:a;?ZNO4[XUL^ncZU1
+L6 1
+VifhI`7T7JbKXHS_B<cYJ[2
+!s100 ]0n3OGSPobR=c8HSMLfZT3
 Z7 OV;C;2020.1;71
 31
-Z8 !s110 1686732546
+Z8 !s110 1686734388
 !i10b 1
-Z9 !s108 1686732546.000000
-Z10 !s90 -reportprogress|300|-93|-work|work|/home/lettner/OneDrive/Studium/Studium_Module/Hardwarepraktikum_2023/ex06/ultrasound_controller_restored/vhdl/ultrasound_controller.vhd|
-Z11 !s107 /home/lettner/OneDrive/Studium/Studium_Module/Hardwarepraktikum_2023/ex06/ultrasound_controller_restored/vhdl/ultrasound_controller.vhd|
+Z9 !s108 1686734388.000000
+Z10 !s90 -reportprogress|300|-93|-work|work|/home/lettner/OneDrive/Studium/Studium_Module/Hardwarepraktikum_2023/ex06/ultrasound_controller_restored/vhdl/motor_controller.vhd|
+Z11 !s107 /home/lettner/OneDrive/Studium/Studium_Module/Hardwarepraktikum_2023/ex06/ultrasound_controller_restored/vhdl/motor_controller.vhd|
 !i113 1
 Z12 o-93 -work work
 Z13 tExplicit 1 CvgOpt 0
-Abehavior
+Abehaviour
 R2
 R3
 R4
-DEx4 work 21 ultrasound_controller 0 22 jP4MUl=NRPez2NlnYXE<P0
+DEx4 work 16 motor_controller 0 22 ifhI`7T7JbKXHS_B<cYJ[2
 !i122 0
-l33
-L15 110
-V@GZ8]CZ2N?U93URl_FR=i3
-!s100 1N^Mam7n9E17HlZ5OhY=L3
+l19
+L17 19
+V>f;Rz3LCHafcm22V^d?N:3
+!s100 ZK1Edm^EQ54>:W^7[LjS02
 R7
 31
 R8
@@ -52,44 +52,44 @@ R11
 !i113 1
 R12
 R13
-Eultrasound_controller_vhd_tst
-Z14 w1434370116
+Emotor_controller_vhd_tst
+Z14 w1686734326
 R3
 R4
 !i122 1
 R0
-Z15 8/home/lettner/OneDrive/Studium/Studium_Module/Hardwarepraktikum_2023/ex06/ultrasound_controller_restored/simulation/modelsim/ultrasound_controller.vht
-Z16 F/home/lettner/OneDrive/Studium/Studium_Module/Hardwarepraktikum_2023/ex06/ultrasound_controller_restored/simulation/modelsim/ultrasound_controller.vht
+Z15 8/home/lettner/OneDrive/Studium/Studium_Module/Hardwarepraktikum_2023/ex06/ultrasound_controller_restored/simulation/modelsim/motor_controller.vht
+Z16 F/home/lettner/OneDrive/Studium/Studium_Module/Hardwarepraktikum_2023/ex06/ultrasound_controller_restored/simulation/modelsim/motor_controller.vht
 l0
 L31 1
-Vl95kz7:?kH7o:9:i0Fc351
-!s100 ^C4PAz4CSkE3S@3kg=fOD2
+VzgZ@Ni>Llmig[C1]@RPL40
+!s100 FV^0c=1m8cfdF>BFc3d=60
 R7
 31
 R8
 !i10b 1
 R9
-Z17 !s90 -reportprogress|300|-93|-work|work|/home/lettner/OneDrive/Studium/Studium_Module/Hardwarepraktikum_2023/ex06/ultrasound_controller_restored/simulation/modelsim/ultrasound_controller.vht|
-!s107 /home/lettner/OneDrive/Studium/Studium_Module/Hardwarepraktikum_2023/ex06/ultrasound_controller_restored/simulation/modelsim/ultrasound_controller.vht|
+Z17 !s90 -reportprogress|300|-93|-work|work|/home/lettner/OneDrive/Studium/Studium_Module/Hardwarepraktikum_2023/ex06/ultrasound_controller_restored/simulation/modelsim/motor_controller.vht|
+!s107 /home/lettner/OneDrive/Studium/Studium_Module/Hardwarepraktikum_2023/ex06/ultrasound_controller_restored/simulation/modelsim/motor_controller.vht|
 !i113 1
 R12
 R13
-Aultrasound_controller_arch
+Amotor_controller_arch
 R3
 R4
-DEx4 work 29 ultrasound_controller_vhd_tst 0 22 l95kz7:?kH7o:9:i0Fc351
+DEx4 work 24 motor_controller_vhd_tst 0 22 zgZ@Ni>Llmig[C1]@RPL40
 !i122 1
 l50
-L33 70
-VM7QWAi6]Cc4OUNERPJdSZ0
-!s100 c@;T3lcf5TPAHa<Un?15U3
+L33 74
+VkU5GFS:D4TS4Q_FoPcC9]0
+!s100 ;?9;L]RHja6TYo8]n7H_g0
 R7
 31
 R8
 !i10b 1
 R9
 R17
-Z18 !s107 /home/lettner/OneDrive/Studium/Studium_Module/Hardwarepraktikum_2023/ex06/ultrasound_controller_restored/simulation/modelsim/ultrasound_controller.vht|
+Z18 !s107 /home/lettner/OneDrive/Studium/Studium_Module/Hardwarepraktikum_2023/ex06/ultrasound_controller_restored/simulation/modelsim/motor_controller.vht|
 !i113 1
 R12
 R13

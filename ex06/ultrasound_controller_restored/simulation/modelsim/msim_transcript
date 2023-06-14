@@ -9,48 +9,58 @@
 # Copying /opt/intelFPGA/20.1/modelsim_ase/linuxaloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
-# vcom -93 -work work {/home/lettner/OneDrive/Studium/Studium_Module/Hardwarepraktikum_2023/ex06/ultrasound_controller_restored/vhdl/ultrasound_controller.vhd}
+# vcom -93 -work work {/home/lettner/OneDrive/Studium/Studium_Module/Hardwarepraktikum_2023/ex06/ultrasound_controller_restored/vhdl/motor_controller.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 10:49:06 on Jun 14,2023
-# vcom -reportprogress 300 -93 -work work /home/lettner/OneDrive/Studium/Studium_Module/Hardwarepraktikum_2023/ex06/ultrasound_controller_restored/vhdl/ultrasound_controller.vhd 
+# Start time: 11:19:48 on Jun 14,2023
+# vcom -reportprogress 300 -93 -work work /home/lettner/OneDrive/Studium/Studium_Module/Hardwarepraktikum_2023/ex06/ultrasound_controller_restored/vhdl/motor_controller.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
-# -- Compiling entity ultrasound_controller
-# -- Compiling architecture behavior of ultrasound_controller
-# End time: 10:49:06 on Jun 14,2023, Elapsed time: 0:00:00
+# -- Compiling entity motor_controller
+# -- Compiling architecture behaviour of motor_controller
+# End time: 11:19:48 on Jun 14,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-# vcom -93 -work work {/home/lettner/OneDrive/Studium/Studium_Module/Hardwarepraktikum_2023/ex06/ultrasound_controller_restored/simulation/modelsim/ultrasound_controller.vht}
+# vcom -93 -work work {/home/lettner/OneDrive/Studium/Studium_Module/Hardwarepraktikum_2023/ex06/ultrasound_controller_restored/simulation/modelsim/motor_controller.vht}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 10:49:06 on Jun 14,2023
-# vcom -reportprogress 300 -93 -work work /home/lettner/OneDrive/Studium/Studium_Module/Hardwarepraktikum_2023/ex06/ultrasound_controller_restored/simulation/modelsim/ultrasound_controller.vht 
+# Start time: 11:19:48 on Jun 14,2023
+# vcom -reportprogress 300 -93 -work work /home/lettner/OneDrive/Studium/Studium_Module/Hardwarepraktikum_2023/ex06/ultrasound_controller_restored/simulation/modelsim/motor_controller.vht 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
-# -- Compiling entity ultrasound_controller_vhd_tst
-# -- Compiling architecture ultrasound_controller_arch of ultrasound_controller_vhd_tst
-# End time: 10:49:06 on Jun 14,2023, Elapsed time: 0:00:00
+# -- Compiling entity motor_controller_vhd_tst
+# -- Compiling architecture motor_controller_arch of motor_controller_vhd_tst
+# End time: 11:19:48 on Jun 14,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneive -L rtl_work -L work -voptargs="+acc"  ultrasound_controller_vhd_tst
-# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneive -L rtl_work -L work -voptargs=""+acc"" ultrasound_controller_vhd_tst 
-# Start time: 10:49:06 on Jun 14,2023
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneive -L rtl_work -L work -voptargs="+acc"  motor_controller_vhd_tst
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneive -L rtl_work -L work -voptargs=""+acc"" motor_controller_vhd_tst 
+# Start time: 11:19:48 on Jun 14,2023
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
-# Loading work.ultrasound_controller_vhd_tst(ultrasound_controller_arch)
+# Loading work.motor_controller_vhd_tst(motor_controller_arch)
 # Loading ieee.numeric_std(body)
-# Loading work.ultrasound_controller(behavior)
+# Loading work.motor_controller(behaviour)
 # 
 # add wave *
+# Unable to lock WLF file "vsim.wlf". Retrying 1 times, errno 11
+# Unable to lock WLF file "vsim.wlf". Retrying 2 times, errno 11
+# Unable to lock WLF file "vsim.wlf". Retrying 3 times, errno 11
+# Cannot lock WLF file: "vsim.wlf"
+#           errno 11: Resource temporarily unavailable.
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: lettner  Hostname: arch-ludwig  ProcessID: 91789
+#           Attempting to use alternate WLF file "./wlftwmency".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftwmency
 # view structure
 # .main_pane.structure.interior.cs.body.struct
 # view signals
 # .main_pane.objects.interior.cs.body.tree
-# run 10 ms
+# run 1 ms
 # 
 # stdin: <EOF>
-# End time: 10:49:17 on Jun 14,2023, Elapsed time: 0:00:11
-# Errors: 0, Warnings: 0
+# End time: 11:22:03 on Jun 14,2023, Elapsed time: 0:02:15
+# Errors: 0, Warnings: 2

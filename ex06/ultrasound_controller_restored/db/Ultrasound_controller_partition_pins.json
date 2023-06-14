@@ -4,47 +4,55 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "finished",
+					"name" : "motor_signal1",
 					"strict" : false
 				},
 				{
-					"name" : "distance[0]",
+					"name" : "motor_signal2",
 					"strict" : false
 				},
 				{
-					"name" : "distance[1]",
+					"name" : "direction",
 					"strict" : false
 				},
 				{
-					"name" : "distance[2]",
+					"name" : "speed[9]",
 					"strict" : false
 				},
 				{
-					"name" : "distance[3]",
+					"name" : "speed[8]",
 					"strict" : false
 				},
 				{
-					"name" : "distance[4]",
+					"name" : "speed[7]",
 					"strict" : false
 				},
 				{
-					"name" : "distance[5]",
+					"name" : "speed[6]",
 					"strict" : false
 				},
 				{
-					"name" : "distance[6]",
+					"name" : "speed[5]",
 					"strict" : false
 				},
 				{
-					"name" : "distance[7]",
+					"name" : "speed[4]",
 					"strict" : false
 				},
 				{
-					"name" : "trigger",
+					"name" : "speed[3]",
 					"strict" : false
 				},
 				{
-					"name" : "enable",
+					"name" : "speed[2]",
+					"strict" : false
+				},
+				{
+					"name" : "speed[1]",
+					"strict" : false
+				},
+				{
+					"name" : "speed[0]",
 					"strict" : false
 				},
 				{

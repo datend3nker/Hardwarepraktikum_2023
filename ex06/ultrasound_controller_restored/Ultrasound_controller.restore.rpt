@@ -1,5 +1,5 @@
 Restore Archived Project report for Ultrasound_controller
-Wed Jun 14 09:28:03 2023
+Wed Jun 14 11:18:25 2023
 Quartus Prime Version 21.1.1 Build 850 06/23/2022 SJ Lite Edition
 
 
@@ -37,9 +37,9 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------+
 ; Restore Archived Project Summary                                        ;
 +---------------------------------+---------------------------------------+
-; Restore Archived Project Status ; Successful - Wed Jun 14 09:28:03 2023 ;
+; Restore Archived Project Status ; Successful - Wed Jun 14 11:18:25 2023 ;
 ; Revision Name                   ; Ultrasound_controller                 ;
-; Top-level Entity Name           ; ultrasound_reader                     ;
+; Top-level Entity Name           ; motor_controller                      ;
 ; Family                          ; Cyclone IV E                          ;
 +---------------------------------+---------------------------------------+
 
@@ -51,8 +51,8 @@ Info: Successfully restored '/home/lettner/OneDrive/Studium/Studium_Module/Hardw
 Info: Generated report 'Ultrasound_controller.restore.rpt'
 Info (23030): Evaluation of Tcl script /opt/intelFPGA/21.1/quartus/common/tcl/apps/qpm/qar.tcl was successful
 Info: Quartus Prime Shell was successful. 0 errors, 13 warnings
-    Info: Peak virtual memory: 592 megabytes
-    Info: Processing ended: Wed Jun 14 09:28:03 2023
+    Info: Peak virtual memory: 594 megabytes
+    Info: Processing ended: Wed Jun 14 11:18:25 2023
     Info: Elapsed time: 00:00:00
     Info: Total CPU time (on all processors): 00:00:00
 
