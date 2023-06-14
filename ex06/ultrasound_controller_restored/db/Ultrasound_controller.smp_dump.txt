@@ -1,5 +1,5 @@
 
-State Machine - |ultrasound_reader|ultrasound_controller:inst3|ctrl_state
+State Machine - |ultrasound_controller|ctrl_state
 Name ctrl_state.STATE_FIN ctrl_state.STATE_COUNT ctrl_state.STATE_WAIT ctrl_state.STATE_SEND_FIN ctrl_state.STATE_SEND_HIGH ctrl_state.STATE_SEND_START ctrl_state.STATE_INIT 
 ctrl_state.STATE_INIT 0 0 0 0 0 0 0 
 ctrl_state.STATE_SEND_START 0 0 0 0 0 1 1 
@@ -8,48 +8,3 @@ ctrl_state.STATE_SEND_FIN 0 0 0 1 0 0 1
 ctrl_state.STATE_WAIT 0 0 1 0 0 0 1 
 ctrl_state.STATE_COUNT 0 1 0 0 0 0 1 
 ctrl_state.STATE_FIN 1 0 0 0 0 0 1 
-
-State Machine - |ultrasound_reader|ultrasound_controller:inst2|ctrl_state
-Name ctrl_state.STATE_FIN ctrl_state.STATE_COUNT ctrl_state.STATE_WAIT ctrl_state.STATE_SEND_FIN ctrl_state.STATE_SEND_HIGH ctrl_state.STATE_SEND_START ctrl_state.STATE_INIT 
-ctrl_state.STATE_INIT 0 0 0 0 0 0 0 
-ctrl_state.STATE_SEND_START 0 0 0 0 0 1 1 
-ctrl_state.STATE_SEND_HIGH 0 0 0 0 1 0 1 
-ctrl_state.STATE_SEND_FIN 0 0 0 1 0 0 1 
-ctrl_state.STATE_WAIT 0 0 1 0 0 0 1 
-ctrl_state.STATE_COUNT 0 1 0 0 0 0 1 
-ctrl_state.STATE_FIN 1 0 0 0 0 0 1 
-
-State Machine - |ultrasound_reader|ultrasound_controller:inst1|ctrl_state
-Name ctrl_state.STATE_FIN ctrl_state.STATE_COUNT ctrl_state.STATE_WAIT ctrl_state.STATE_SEND_FIN ctrl_state.STATE_SEND_HIGH ctrl_state.STATE_SEND_START ctrl_state.STATE_INIT 
-ctrl_state.STATE_INIT 0 0 0 0 0 0 0 
-ctrl_state.STATE_SEND_START 0 0 0 0 0 1 1 
-ctrl_state.STATE_SEND_HIGH 0 0 0 0 1 0 1 
-ctrl_state.STATE_SEND_FIN 0 0 0 1 0 0 1 
-ctrl_state.STATE_WAIT 0 0 1 0 0 0 1 
-ctrl_state.STATE_COUNT 0 1 0 0 0 0 1 
-ctrl_state.STATE_FIN 1 0 0 0 0 0 1 
-
-State Machine - |ultrasound_reader|dataToLcd:inst4|state
-Name state.pause state.init state.update 
-state.update 0 0 0 
-state.init 0 1 1 
-state.pause 1 0 1 
-
-State Machine - |ultrasound_reader|lcd_driver2:inst5|state
-Name state.sendingData state.sendingAddress state.ready state.createChar5 state.createChar4 state.createChar3 state.createChar2 state.createChar1 state.init7 state.init6 state.init5 state.init4 state.init3 state.init2 state.init1 state.init0 
-state.init0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-state.init1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
-state.init2 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
-state.init3 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
-state.init4 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
-state.init5 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
-state.init6 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
-state.init7 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
-state.createChar1 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
-state.createChar2 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
-state.createChar3 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
-state.createChar4 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
-state.createChar5 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
-state.ready 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
-state.sendingAddress 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
-state.sendingData 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 

@@ -3,147 +3,39 @@ Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow 1200mV 85C Model Setup 'clk_50'
-Slack : -4.173
-TNS   : -1249.569
-
-Type  : Slow 1200mV 85C Model Setup 'controller:inst|ctrl_state.STATE_SENSOR_2_168'
-Slack : -3.483
-TNS   : -11.404
-
-Type  : Slow 1200mV 85C Model Setup 'controller:inst|ctrl_state.STATE_SENSOR_1_180'
-Slack : -3.411
-TNS   : -11.121
-
-Type  : Slow 1200mV 85C Model Setup 'controller:inst|ctrl_state.STATE_IDLE_192'
-Slack : -1.212
-TNS   : -3.135
-
-Type  : Slow 1200mV 85C Model Hold 'controller:inst|ctrl_state.STATE_SENSOR_1_180'
-Slack : -0.131
-TNS   : -0.131
-
-Type  : Slow 1200mV 85C Model Hold 'controller:inst|ctrl_state.STATE_SENSOR_2_168'
-Slack : 0.118
-TNS   : 0.000
-
-Type  : Slow 1200mV 85C Model Hold 'controller:inst|ctrl_state.STATE_IDLE_192'
-Slack : 0.226
-TNS   : 0.000
+Slack : -3.169
+TNS   : -166.553
 
 Type  : Slow 1200mV 85C Model Hold 'clk_50'
-Slack : 0.342
+Slack : 0.343
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk_50'
 Slack : -3.000
-TNS   : -410.000
-
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'controller:inst|ctrl_state.STATE_SENSOR_1_180'
-Slack : 0.411
-TNS   : 0.000
-
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'controller:inst|ctrl_state.STATE_SENSOR_2_168'
-Slack : 0.432
-TNS   : 0.000
-
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'controller:inst|ctrl_state.STATE_IDLE_192'
-Slack : 0.434
-TNS   : 0.000
+TNS   : -71.000
 
 Type  : Slow 1200mV 0C Model Setup 'clk_50'
-Slack : -3.693
-TNS   : -1086.664
-
-Type  : Slow 1200mV 0C Model Setup 'controller:inst|ctrl_state.STATE_SENSOR_2_168'
-Slack : -3.038
-TNS   : -9.997
-
-Type  : Slow 1200mV 0C Model Setup 'controller:inst|ctrl_state.STATE_SENSOR_1_180'
-Slack : -2.978
-TNS   : -9.747
-
-Type  : Slow 1200mV 0C Model Setup 'controller:inst|ctrl_state.STATE_IDLE_192'
-Slack : -1.190
-TNS   : -2.985
-
-Type  : Slow 1200mV 0C Model Hold 'controller:inst|ctrl_state.STATE_SENSOR_1_180'
-Slack : -0.067
-TNS   : -0.067
-
-Type  : Slow 1200mV 0C Model Hold 'controller:inst|ctrl_state.STATE_SENSOR_2_168'
-Slack : 0.143
-TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Hold 'controller:inst|ctrl_state.STATE_IDLE_192'
-Slack : 0.255
-TNS   : 0.000
+Slack : -2.745
+TNS   : -142.338
 
 Type  : Slow 1200mV 0C Model Hold 'clk_50'
-Slack : 0.298
+Slack : 0.299
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk_50'
 Slack : -3.000
-TNS   : -410.000
-
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'controller:inst|ctrl_state.STATE_SENSOR_2_168'
-Slack : 0.406
-TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'controller:inst|ctrl_state.STATE_SENSOR_1_180'
-Slack : 0.422
-TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'controller:inst|ctrl_state.STATE_IDLE_192'
-Slack : 0.448
-TNS   : 0.000
+TNS   : -71.000
 
 Type  : Fast 1200mV 0C Model Setup 'clk_50'
-Slack : -1.841
-TNS   : -518.898
-
-Type  : Fast 1200mV 0C Model Setup 'controller:inst|ctrl_state.STATE_SENSOR_2_168'
-Slack : -1.652
-TNS   : -4.984
-
-Type  : Fast 1200mV 0C Model Setup 'controller:inst|ctrl_state.STATE_SENSOR_1_180'
-Slack : -1.616
-TNS   : -4.762
-
-Type  : Fast 1200mV 0C Model Setup 'controller:inst|ctrl_state.STATE_IDLE_192'
-Slack : -0.493
-TNS   : -1.141
-
-Type  : Fast 1200mV 0C Model Hold 'controller:inst|ctrl_state.STATE_SENSOR_1_180'
-Slack : 0.030
-TNS   : 0.000
+Slack : -1.296
+TNS   : -63.262
 
 Type  : Fast 1200mV 0C Model Hold 'clk_50'
-Slack : 0.178
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Hold 'controller:inst|ctrl_state.STATE_SENSOR_2_168'
-Slack : 0.218
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Hold 'controller:inst|ctrl_state.STATE_IDLE_192'
-Slack : 0.306
+Slack : 0.179
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk_50'
 Slack : -3.000
-TNS   : -435.169
-
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'controller:inst|ctrl_state.STATE_IDLE_192'
-Slack : 0.375
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'controller:inst|ctrl_state.STATE_SENSOR_1_180'
-Slack : 0.388
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'controller:inst|ctrl_state.STATE_SENSOR_2_168'
-Slack : 0.433
-TNS   : 0.000
+TNS   : -75.261
 
 ------------------------------------------------------------
